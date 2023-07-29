@@ -1,8 +1,35 @@
 import React from "react";
 import styles from "./page.module.css";
+import Link from "next/link";
 
-const Blog = () => {
-  return <div>Blog</div>;
+async function getData() {
+  // by default, fetch will automatically fetch and cache data indefinietley
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+
+  if (!response.ok) {
+    throw new Error("Failed to fetch data");
+  }
+
+  return response.json();
+}
+
+const Blog = async () => {
+  const data = await getData();
+  console.log({ data });
+
+  return (
+    <div>
+      {data.map((item: any) => (
+        <Link href="/test">
+          <div className={styles.imgContainer}></div>
+          <div className={styles.content}>
+            <h1 className={styles.title}>{item.title}</h1>
+            <p className={styles.desc}>{item.body}</p>
+          </div>
+        </Link>
+      ))}
+    </div>
+  );
 };
 
 export default Blog;
