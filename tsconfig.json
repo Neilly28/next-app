@@ -28,7 +28,8 @@
     "**/*.ts",
     "**/*.tsx",
     ".next/types/**/*.ts",
-    "context/ThemeContext.js"
+    "src/context/ThemeContext.js",
+    "src/utils/db.js"
   ],
   "exclude": ["node_modules"]
 }
