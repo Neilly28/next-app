@@ -4,7 +4,9 @@ import Link from "next/link";
 
 async function getData() {
   // by default, fetch will automatically fetch and cache data indefinietley
-  const response = await fetch("https://jsonplaceholder.typicode.com/posts");
+  const response = await fetch("https://jsonplaceholder.typicode.com/posts", {
+    cache: "no-store",
+  });
 
   if (!response.ok) {
     throw new Error("Failed to fetch data");
@@ -20,7 +22,11 @@ const Blog = async () => {
   return (
     <div>
       {data.map((item: any) => (
-        <Link href="/test">
+        <Link
+          href={`/blog/${item.id}`}
+          className={styles.container}
+          key={item.id}
+        >
           <div className={styles.imgContainer}></div>
           <div className={styles.content}>
             <h1 className={styles.title}>{item.title}</h1>
