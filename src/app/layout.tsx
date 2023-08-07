@@ -6,6 +6,7 @@ import Navbar from "@/components/navbar/Navbar";
 import ThemeProvider from "@/context/ThemeContext";
 
 const inter = Inter({ subsets: ["latin"] });
+// const poppins = Poppins({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -23,7 +24,6 @@ export default function RootLayout({
         <ThemeProvider>
           <div className="container">
             <Navbar />
-            <h1>Hello from Main Layout</h1>
             {children}
             <Footer />
           </div>

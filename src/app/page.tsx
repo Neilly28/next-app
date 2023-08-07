@@ -5,11 +5,9 @@ export default function Home() {
   return (
     <div className={styles.container}>
       <div className={styles.item}>
-        <h1 className={styles.title}>
-          Better design for your digital products
-        </h1>
-        <p className={styles.desc}>Turn your ideas into reality.</p>
-        <button className={styles.btn}>See our works</button>
+        <h1 className={styles.title}>Hi, I'm Neil, a Web Developer</h1>
+        <p className={styles.desc}>I love creating web apps.</p>
+        <button className={styles.btn}>Let's chat</button>
       </div>
       <div className={styles.item}>
         <Image

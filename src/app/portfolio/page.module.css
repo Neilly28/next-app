@@ -1,0 +1,36 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  height: 100vh;
+}
+
+.text {
+  padding: 44px;
+}
+
+.title {
+  font-size: 72px;
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tags {
+  padding: 5px 10px;
+  border-radius: 99px;
+  background-color: yellow;
+}
+
+.box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

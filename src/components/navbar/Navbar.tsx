@@ -10,13 +10,14 @@ const links = [
   { id: 3, title: "Blog", url: "/blog" },
   { id: 4, title: "About", url: "/about" },
   { id: 5, title: "Contact", url: "/contact" },
+  { id: 6, title: "GitHub", url: "https://github.com/Neilly28" },
 ];
 
 const Navbar = () => {
   return (
     <div className={styles.container}>
       <Link className={styles.logo} href="/">
-        neilapp
+        neilapp 😁
       </Link>
       <div className={styles.links}>
         <DarkModeToggle />
