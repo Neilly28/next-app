@@ -4,8 +4,6 @@ import Image from "next/image";
 import { projects } from "../data/projects";
 
 const Portfolio = () => {
-  console.log(projects);
-
   return (
     <section>
       {projects.map((project, index) => (
@@ -20,6 +18,10 @@ const Portfolio = () => {
               ))}
             </div>
             <p className={styles.description}>{project.description}</p>
+            <div className={styles.buttons}>
+              <button className={styles.live}>Visit the live site</button>
+              <button className={styles.github}>GitHub</button>
+            </div>
           </div>
           <div className={styles.box}>
             <Image

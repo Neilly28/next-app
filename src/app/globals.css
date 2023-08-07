@@ -18,13 +18,13 @@ a {
 }
 
 .light {
-  background-color: white;
+  background-color: #fefbf1;
   color: #444;
 }
 
 .dark {
   background-color: #111;
-  color: #bbb;
+  color: #999;
 }
 
 .theme {
