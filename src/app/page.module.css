@@ -12,14 +12,53 @@
 }
 
 .title {
-  font-size: 72px;
+  font-size: 56px;
 }
 
 .desc {
   font-size: 24px;
 }
 
+.links {
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 4px;
+}
+
 .btn {
   width: 200px;
   padding: 20px;
+}
+
+.live,
+.portfolio {
+  padding: 20px 40px;
+  border-radius: 99px;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.live {
+  background-color: #3749ea;
+}
+
+.live:hover {
+  background-color: #221262;
+}
+
+.portfolio {
+  color: inherit;
+}
+
+.portfolio:hover {
+  background-color: #a8a8a8;
 }

@@ -1,5 +1,14 @@
 export const projects = [
   {
+    title: "Speak Vue",
+    tags: ["Vue.js", "Node.js", "Express", "MongoDB", "Tailwind"],
+    description:
+      "Speak Vue is a full stack app that allows language learners to discover and book teachers. Made with Vue.js, Node, Express, and MongoDB, and features secure JWT authentication, Vue 3, Vue Router, Composition API, and Pinia State Management.",
+    image: "/speakvue.png",
+    live: "https://speakvue.netlify.app/",
+    github: "https://github.com/Neilly28/vue-speak",
+  },
+  {
     title: "Pokéhack",
     tags: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind"],
     description:
