@@ -3,7 +3,8 @@
 import styles from "./hero.module.css";
 import Lottie from "lottie-react";
 import hero from "../../../public/hero.json";
-import Link from "next/link";
+// import Link from "next/link";
+import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 export default function Home() {
   return (
@@ -13,30 +14,18 @@ export default function Home() {
           Hi, I'm <span className={styles.name}>Neil,</span>
           <br /> a Web Developer 👋🏻
         </h1>
-        <p className={styles.desc}>
-          Have a project in mind?{" "}
-          <Link href="/" className={styles.chat}>
-            Let's chat
-          </Link>
-        </p>
-        {/* <div className={styles.links}>
-          <Link href="/" target="_blank">
+        <p className={styles.desc}>Have a project in mind?</p>
+        <div className={styles.links}>
+          <ScrollLink to="about" smooth={true} duration={1000}>
             <button className={styles.live}>Let's chat</button>
-          </Link>
-          <Link href="/" target="_blank">
+          </ScrollLink>
+          <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <button className={styles.portfolio}>My portfolio</button>
-          </Link>
-        </div> */}
+          </ScrollLink>
+        </div>
       </div>
       <div className={styles.hero}>
         <Lottie animationData={hero} loop={true} />
-        {/* <Image
-          className={styles.img}
-          src="/hero.png"
-          width={500}
-          height={500}
-          alt="hero"
-        /> */}
       </div>
     </div>
   );

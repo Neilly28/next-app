@@ -2,16 +2,6 @@
   height: 50px;
   display: flex;
   align-items: center;
-  justify-content: space-between;
-}
-
-.social {
-  display: flex;
-  align-items: center;
-  gap: 10px;
-}
-
-.icon {
-  opacity: 0.6;
-  cursor: pointer;
+  justify-content: center;
+  margin: 50px;
 }

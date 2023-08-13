@@ -9,7 +9,7 @@ import arrow from "../../../public/arrow.json";
 
 const Portfolio = () => {
   return (
-    <section>
+    <section id="portfolio">
       <div className={styles.arrowwrapper}>
         <h2 className={styles.arrowtext}>My recent work</h2>
         <Lottie
