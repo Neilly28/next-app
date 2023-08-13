@@ -1,0 +1,129 @@
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  height: 100vh;
+}
+
+.arrowwrapper {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  color: #3749ea;
+}
+
+.arrow {
+  height: 72px;
+}
+
+.text {
+  display: flex;
+  flex-direction: column;
+}
+
+.title {
+  font-size: 72px;
+  margin-bottom: 12px;
+}
+
+.list {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 6px;
+  margin-bottom: 12px;
+}
+
+.tags {
+  padding: 5px 10px;
+  border-radius: 99px;
+  background-color: yellow;
+}
+
+.buttons {
+  margin-top: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  gap: 12px;
+}
+
+.live,
+.github {
+  padding: 20px 40px;
+  border-radius: 99px;
+  border: none;
+  font-size: 16px;
+  color: #ffffff;
+  cursor: pointer;
+  font-weight: 600;
+  transition: all 0.25s ease-in-out;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+}
+
+.live {
+  background-color: #3749ea;
+}
+
+.live:hover {
+  background-color: #221262;
+}
+
+.github {
+  color: inherit;
+}
+
+.github:hover {
+  background-color: #a8a8a8;
+}
+
+@media screen and (max-width: 1024px) {
+  .container {
+    grid-template-columns: 1fr; /* Change to a single column layout */
+    height: auto;
+    margin-bottom: 96px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .arrowwrapper {
+    margin-bottom: 96px;
+  }
+
+  .arrow {
+    height: 44px;
+  }
+
+  .title {
+    font-size: 44px;
+  }
+
+  .list {
+    flex-wrap: wrap;
+  }
+
+  .tags {
+    font-size: 12px;
+  }
+
+  .description {
+    font-size: 12px;
+  }
+
+  .img {
+    width: 90%;
+    height: 90%;
+  }
+
+  .live,
+  .github {
+    font-size: 12px;
+    padding: 10px 20px;
+  }
+}
