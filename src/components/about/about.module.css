@@ -1,0 +1,35 @@
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 40px;
+}
+
+.img {
+  clip-path: circle();
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 44px;
+}
+
+.text {
+  font-size: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  /* word-spacing: 12px; */
+
+  /* font-weight: 700; */
+}
+
+.stack {
+  font-size: 28px;
+  display: flex;
+  align-items: center;
+  /* justify-content: center; */
+  gap: 6px;
+}
