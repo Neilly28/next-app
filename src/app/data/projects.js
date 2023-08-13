@@ -10,7 +10,7 @@ export const projects = [
   },
   {
     title: "Pokéhack",
-    tags: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind"],
+    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
     description:
       "Full Stack MERN app which utilizes the PokeAPI and OpenAI API to allow users to generate their own custom Pokémon. Winner of Ironhack Berlin March 2023 Hackshow🥇",
     image: "/pokehack.png",
@@ -19,7 +19,7 @@ export const projects = [
   },
   {
     title: "digi.shop",
-    tags: ["MongoDB", "Express.js", "React", "Node.js", "Tailwind"],
+    tags: ["React", "Node.js", "Express", "MongoDB", "Tailwind"],
     description:
       "A Full Stack e-commerce website with product listing and full shopping cart functionality.",
     image: "/digishop.png",

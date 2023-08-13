@@ -6,6 +6,20 @@ import { BsGithub } from "react-icons/bs";
 import Link from "next/link";
 import Lottie from "lottie-react";
 import arrow from "../../../public/arrow.json";
+import { Icon } from "@iconify/react";
+
+import {
+  BiLogoHtml5,
+  BiLogoCss3,
+  BiLogoJavascript,
+  BiLogoTypescript,
+  BiLogoReact,
+  BiLogoVuejs,
+  BiLogoNodejs,
+  BiLogoMongodb,
+  BiLogoTailwindCss,
+  BiLogoSass,
+} from "react-icons/bi";
 
 const Portfolio = () => {
   return (

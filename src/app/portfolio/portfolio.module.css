@@ -71,6 +71,10 @@
   background-color: #a8a8a8;
 }
 
+.description {
+  font-size: 24px;
+}
+
 @media screen and (max-width: 1024px) {
   .container {
     grid-template-columns: 1fr; /* Change to a single column layout */

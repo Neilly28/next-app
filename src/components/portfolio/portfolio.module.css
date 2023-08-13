@@ -22,6 +22,7 @@
 .text {
   display: flex;
   flex-direction: column;
+  gap: 20px;
 }
 
 .title {
@@ -40,7 +41,13 @@
 .tags {
   padding: 5px 10px;
   border-radius: 99px;
-  background-color: yellow;
+  background-color: #f8e71c;
+  font-size: 16px;
+  font-weight: 700;
+}
+
+.description {
+  font-size: 20px;
 }
 
 .buttons {

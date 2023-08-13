@@ -8,9 +8,9 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const links = [
   // { id: 1, title: "Home", url: "/" },
-  { id: 2, title: "Portfolio", url: "/portfolio" },
+  { id: 2, title: "portfolio", url: "/portfolio" },
   // { id: 3, title: "Blog", url: "/blog" },
-  { id: 4, title: "About", url: "/about" },
+  { id: 4, title: "about", url: "/about" },
   { id: 6, title: "GitHub", url: "https://github.com/Neilly28" },
   {
     id: 7,
