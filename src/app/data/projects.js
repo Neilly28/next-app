@@ -26,15 +26,15 @@ export const projects = [
     live: "https://digidotshop.netlify.app/",
     github: "https://github.com/Neilly28/ecommerce",
   },
-  {
-    title: "Next-Movie",
-    tags: ["MongoDB", "React", "Tailwind"],
-    description:
-      "An app built using Next.js 13 that utilizes The Movie Database API to showcase the most popular movies in real-time. This mini-project demonstrates my ability to effectively integrate external APIs and leverage the latest technology to build engaging web applications.",
-    image: "/movie.png",
-    live: "https://next-movie-tau.vercel.app/",
-    github: "https://github.com/Neilly28/next-movie",
-  },
+  // {
+  //   title: "Next-Movie",
+  //   tags: ["MongoDB", "React", "Tailwind"],
+  //   description:
+  //     "An app built using Next.js 13 that utilizes The Movie Database API to showcase the most popular movies in real-time. This mini-project demonstrates my ability to effectively integrate external APIs and leverage the latest technology to build engaging web applications.",
+  //   image: "/movie.png",
+  //   live: "https://next-movie-tau.vercel.app/",
+  //   github: "https://github.com/Neilly28/next-movie",
+  // },
   {
     title: "Skifree's Redemption",
     tags: ["HTML", "CSS", "p5.js"],
