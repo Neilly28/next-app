@@ -11,19 +11,25 @@ export default function Home() {
     <div className={styles.container}>
       <div className={styles.item}>
         <h1 className={styles.title}>
-          Hi, I'm Neil, <br />a Web Developer
+          Hi, I'm <span className={styles.name}>Neil,</span>
+          <br /> a Web Developer 👋🏻
         </h1>
-        <p className={styles.desc}>Have a project in mind?</p>
-        <div className={styles.links}>
+        <p className={styles.desc}>
+          Have a project in mind?{" "}
+          <Link href="/" className={styles.chat}>
+            Let's chat
+          </Link>
+        </p>
+        {/* <div className={styles.links}>
           <Link href="/" target="_blank">
             <button className={styles.live}>Let's chat</button>
           </Link>
           <Link href="/" target="_blank">
             <button className={styles.portfolio}>My portfolio</button>
           </Link>
-        </div>
+        </div> */}
       </div>
-      <div className={styles.item}>
+      <div className={styles.hero}>
         <Lottie animationData={hero} loop={true} />
         {/* <Image
           className={styles.img}

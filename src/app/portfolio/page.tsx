@@ -33,12 +33,12 @@ const Portfolio = () => {
               ) : null}
             </div>
           </div>
-          <div className={styles.box}>
+          <div className={styles.wrapper}>
             <Image
               className={styles.img}
               src={project.image}
               width={500}
-              height={500}
+              height={600}
               alt="hero"
             />
           </div>

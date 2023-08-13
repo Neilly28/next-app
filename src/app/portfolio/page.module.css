@@ -69,7 +69,7 @@
   background-color: #a8a8a8;
 }
 
-.box {
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
