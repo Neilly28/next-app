@@ -1,8 +1,10 @@
 .container {
   height: 100px;
   display: flex;
-  justify-content: space-between;
   align-items: center;
+  justify-content: space-between;
+  margin: 0 auto;
+  width: 100%;
 }
 
 .logo {
@@ -11,6 +13,7 @@
 }
 
 .links {
+  /* width: 100%; */
   display: flex;
   align-items: center;
   gap: 20px;
@@ -22,4 +25,20 @@
   /* background-color: aquamarine; */
   /* color: white; */
   cursor: pointer;
+}
+
+@media screen and (max-width: 480px) {
+  .logo {
+    display: none;
+  }
+
+  .links {
+    margin: 0 auto;
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .link {
+    font-size: 12px;
+  }
 }
