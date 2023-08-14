@@ -60,10 +60,10 @@
 
 .live,
 .github {
-  padding: 10px 20px;
+  padding: 20px 40px;
   border-radius: 99px;
   border: none;
-  font-size: 16px;
+  font-size: 20px;
   color: #ffffff;
   cursor: pointer;
   font-weight: 600;
@@ -143,5 +143,10 @@
   .img {
     order: -1;
     border-radius: none;
+  }
+
+  .live,
+  .github {
+    font-size: 16px;
   }
 }

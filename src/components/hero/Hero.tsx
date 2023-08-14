@@ -3,8 +3,9 @@
 import styles from "./hero.module.css";
 import Lottie from "lottie-react";
 import hero from "../../../public/hero.json";
-// import Link from "next/link";
+import Link from "next/link";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
+import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 export default function Home() {
   return (
@@ -22,6 +23,15 @@ export default function Home() {
           <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <button className={styles.portfolio}>My portfolio</button>
           </ScrollLink>
+          <Link href="https://github.com/Neilly28" target="_blank">
+            <BsGithub className={styles.icon} />
+          </Link>
+          <Link
+            href="https://www.linkedin.com/in/neil-pilarca/"
+            target="_blank"
+          >
+            <BsLinkedin className={styles.icon} />
+          </Link>
         </div>
       </div>
       <div className={styles.hero}>
