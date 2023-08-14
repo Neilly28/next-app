@@ -30,10 +30,18 @@ const Navbar = () => {
         >
           about
         </ScrollLink>
-        <Link href="https://github.com/Neilly28" target="_blank">
+        <Link
+          href="https://github.com/Neilly28"
+          target="_blank"
+          className={styles.link}
+        >
           <BsGithub />
         </Link>
-        <Link href="https://www.linkedin.com/in/neil-pilarca/" target="_blank">
+        <Link
+          href="https://www.linkedin.com/in/neil-pilarca/"
+          target="_blank"
+          className={styles.link}
+        >
           <BsLinkedin />
         </Link>
       </div>
