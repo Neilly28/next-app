@@ -17,11 +17,11 @@
 }
 
 .arrowtext {
-  font-size: 24px;
+  font-size: 44px;
 }
 
 .arrow {
-  width: 2rem;
+  width: 4rem;
 }
 
 .text {
@@ -120,6 +120,14 @@
   .arrowwrapper {
     margin-bottom: 96px;
     /* flex-direction: column; */
+  }
+
+  .arrowtext {
+    font-size: 24px;
+  }
+
+  .arrow {
+    width: 2rem;
   }
 
   .title {
