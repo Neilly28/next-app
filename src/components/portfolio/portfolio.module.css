@@ -12,7 +12,7 @@
   align-items: center;
   justify-content: center;
   gap: 20px;
-  color: #3749ea;
+  /* color: #3749ea; */
 }
 
 .arrow {
@@ -44,6 +44,7 @@
   background-color: #f8e71c;
   font-size: 16px;
   font-weight: 700;
+  color: #444;
 }
 
 .description {
@@ -83,7 +84,7 @@
 }
 
 .github {
-  color: inherit;
+  color: #444;
 }
 
 .github:hover {

@@ -13,7 +13,9 @@ const Navbar = () => {
       <Link className={styles.logo} href="/">
         neily.dev
       </Link>
+
       <div className={styles.links}>
+        <DarkModeToggle />
         <ScrollLink
           to="portfolio"
           smooth={true}

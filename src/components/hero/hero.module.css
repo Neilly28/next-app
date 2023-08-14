@@ -22,11 +22,7 @@
 .title {
   font-size: 60px;
   font-weight: 800;
-  color: #3749ea;
-}
-
-.name {
-  color: #444;
+  /* color: #3749ea; */
 }
 
 .chat {
