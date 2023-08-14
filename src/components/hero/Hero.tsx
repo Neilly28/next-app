@@ -17,7 +17,7 @@ export default function Home() {
         <p className={styles.desc}>Have a project in mind?</p>
         <div className={styles.links}>
           <ScrollLink to="about" smooth={true} duration={1000}>
-            <button className={styles.live}>Let's chat</button>
+            <button className={styles.live}>Let&apos;s chat</button>
           </ScrollLink>
           <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <button className={styles.portfolio}>My portfolio</button>

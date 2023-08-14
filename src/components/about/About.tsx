@@ -35,10 +35,10 @@ const About = () => {
           <div className={styles.text}>
             <h2 className={styles.about}>About me 😎</h2>
             <p className={styles.text}>
-              👋 Hey there, I'm Neil – a frontend developer based in Berlin. I
-              have a passion for crafting seamless user experiences tailored for
-              clients across different industries. Let's bring your vision to
-              life! 🚀
+              👋 Hey there, I&apos;m Neil – a frontend developer based in
+              Berlin. I have a passion for crafting seamless user experiences
+              tailored for clients across different industries. Let&apos;s bring
+              your vision to life! 🚀
             </p>
           </div>
 
