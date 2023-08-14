@@ -1,7 +1,8 @@
 "use client";
+
 import React from "react";
 import Link from "next/link";
-import styles from "./page.module.css";
+import styles from "./navbar.module.css";
 import DarkModeToggle from "../DarkModeToggle/DarkModeToggle";
 import { BsGithub, BsLinkedin } from "react-icons/bs";
 import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
@@ -26,7 +27,7 @@ const Navbar = () => {
         neily.dev
       </Link>
       <div className={styles.links}>
-        <DarkModeToggle />
+        {/* <DarkModeToggle /> */}
         {links.map((link) => (
           <ScrollLink
             key={link.id}
