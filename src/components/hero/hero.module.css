@@ -87,6 +87,14 @@
   font-size: 28px;
 }
 
+.icon {
+  transition: color 0.25s ease-in-out; /* Add transition for color property */
+}
+
+.icon:hover {
+  color: #3749ea;
+}
+
 @media screen and (max-width: 480px) {
   .container {
     display: flex;
