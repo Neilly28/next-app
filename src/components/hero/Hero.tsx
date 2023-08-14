@@ -20,9 +20,9 @@ export default function Home() {
           <ScrollLink to="about" smooth={true} duration={1000}>
             <button className={styles.live}>Let&apos;s chat</button>
           </ScrollLink>
-          <ScrollLink to="portfolio" smooth={true} duration={1000}>
+          {/* <ScrollLink to="portfolio" smooth={true} duration={1000}>
             <button className={styles.portfolio}>My portfolio</button>
-          </ScrollLink>
+          </ScrollLink> */}
           <Link href="https://github.com/Neilly28" target="_blank">
             <BsGithub className={styles.icon} />
           </Link>
