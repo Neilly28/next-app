@@ -34,6 +34,7 @@
   align-items: center;
   /* justify-content: center; */
   gap: 12px;
+  flex-wrap: wrap;
 }
 
 .links {
@@ -67,9 +68,5 @@
   .links {
     font-size: 16px;
     gap: 10px;
-  }
-
-  .stack {
-    flex-wrap: wrap;
   }
 }

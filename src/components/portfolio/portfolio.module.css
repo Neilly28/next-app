@@ -103,6 +103,12 @@
 }
 
 @media screen and (max-width: 480px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+  }
+
   .arrowwrapper {
     margin-bottom: 96px;
   }
@@ -128,8 +134,8 @@
   }
 
   .img {
-    width: 90%;
-    height: 90%;
+    order: -1;
+    border-radius: none;
   }
 
   .live,
