@@ -16,8 +16,7 @@ const DarkModeToggle = () => {
         className={styles.iconToggle}
         style={mode === "light" ? { left: "2px" } : { right: "2px" }}
       >
-        {" "}
-        🟢
+        {mode === "light" ? "😎" : "😴"}
       </div>
     </div>
   );
