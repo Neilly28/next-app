@@ -38,7 +38,7 @@ a {
 .container {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 0 5.6rem;
+  padding: 4.4rem 5.6rem;
 }
 
 /* landscape tablets */
@@ -61,6 +61,6 @@ a {
 
 @media screen and (max-width: 480px) {
   .container {
-    padding: 0 24px;
+    /* padding: 12px 24px; */
   }
 }
