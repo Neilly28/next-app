@@ -10,19 +10,16 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 export default function Home() {
   return (
     <div className={styles.container}>
-      <div className={styles.item}>
+      <div className={styles.text}>
         <h1 className={styles.title}>
-          Hi, I&apos;m <span className={styles.name}>Neil,</span>
-          <br /> a Web Developer 👋🏻
+          Hi! I&apos;m <span className={styles.name}>Neil,</span>
+          <br /> a Web Developer👋
         </h1>
         <p className={styles.desc}>Have a project in mind?</p>
         <div className={styles.links}>
           <ScrollLink to="about" smooth={true} duration={1000}>
-            <button className={styles.live}>Let&apos;s chat</button>
+            <button className={styles.btn}>Let&apos;s chat</button>
           </ScrollLink>
-          {/* <ScrollLink to="portfolio" smooth={true} duration={1000}>
-            <button className={styles.portfolio}>My portfolio</button>
-          </ScrollLink> */}
           <Link href="https://github.com/Neilly28" target="_blank">
             <BsGithub className={styles.icon} />
           </Link>
@@ -34,9 +31,7 @@ export default function Home() {
           </Link>
         </div>
       </div>
-      <div className={styles.hero}>
-        <Lottie animationData={hero} loop={true} />
-      </div>
+      <Lottie animationData={hero} loop={true} className={styles.img} />
     </div>
   );
 }

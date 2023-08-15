@@ -1,23 +1,27 @@
+.section {
+  margin-bottom: 16rem;
+}
+
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-content: space-between;
-  gap: 20px;
-  height: 100vh;
+  gap: 2.4rem;
+  margin-bottom: 24rem;
+  /* height: 100vh; */
 }
 
-.arrowwrapper {
+.wrapper {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 20px;
-  /* color: #3749ea; */
-  margin-bottom: 200px;
+  gap: 2.4rem;
+  margin-bottom: 24rem;
 }
 
-.arrowtext {
-  font-size: 44px;
+.subtitle {
+  font-size: 3.6rem;
 }
 
 .arrow {
@@ -27,49 +31,57 @@
 .text {
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  align-items: flex-start;
+  /* width: 100%; */
+  /* margin: 0 auto; */
+  gap: 2.4rem;
 }
 
 .title {
-  font-size: 72px;
-  margin-bottom: 12px;
+  font-size: 7.2rem;
 }
 
 .list {
   display: flex;
+  flex-wrap: wrap;
   align-items: center;
   justify-content: flex-start;
-  gap: 6px;
-  margin-bottom: 12px;
+  gap: 0.5rem;
+  margin-bottom: 1.2rem;
 }
 
-.tags {
-  padding: 5px 10px;
-  border-radius: 99px;
+.tag {
+  padding: 0.5rem 1rem;
+  border-radius: 9.9rem;
   background-color: #f8e71c;
-  font-size: 16px;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #444;
 }
 
-.description {
-  font-size: 20px;
+.desc {
+  font-size: 2.4rem;
 }
 
 .buttons {
-  margin-top: 24px;
+  margin-top: 2.4rem;
   display: flex;
   align-items: center;
   justify-content: flex-start;
-  gap: 12px;
+  gap: 1.2rem;
 }
 
 .live,
-.github {
-  padding: 15px 25px;
-  border-radius: 99px;
+.github,
+.live:link,
+.live:hover,
+.github:link,
+.github:hover {
+  display: inline-block;
+  padding: 1.6rem 3.2rem;
+  border-radius: 9.9rem;
   border: none;
-  font-size: 20px;
+  font-size: 2rem;
   color: #ffffff;
   cursor: pointer;
   font-weight: 600;
@@ -77,14 +89,14 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 12px;
 }
 
 .live {
   background-color: #3749ea;
 }
 
-.live:hover {
+.live:hover,
+.live:active {
   background-color: #221262;
 }
 
@@ -92,67 +104,59 @@
   color: #444;
 }
 
-.github:hover {
+.github:hover,
+.github:active {
   background-color: #a8a8a8;
 }
 
 .img {
-  border-radius: 50px;
+  border-radius: 4.8rem;
+  max-width: 100%;
 }
 
-@media screen and (max-width: 1024px) {
-  .container {
-    grid-template-columns: 1fr; /* Change to a single column layout */
-    height: auto;
-    margin-bottom: 200px;
-  }
-}
-
-@media screen and (max-width: 480px) {
+/* smaller desktops */
+@media (max-width: 84em) {
   .container {
     display: flex;
-    flex-direction: column;
-    gap: 40px;
-    /* position: relative; */
-    /* gap: 40px; */
+    gap: 2.4rem;
+    margin-bottom: 12rem;
   }
 
-  .arrowwrapper {
-    margin-bottom: 96px;
-    /* flex-direction: column; */
-  }
-
-  .arrowtext {
-    font-size: 24px;
-  }
-
-  .arrow {
-    width: 2rem;
-  }
-
-  .title {
-    font-size: 44px;
-  }
-
-  .list {
-    flex-wrap: wrap;
-  }
-
-  .tags {
-    font-size: 14px;
-  }
-
-  .description {
-    font-size: 16px;
+  .text {
+    max-width: 75%;
   }
 
   .img {
-    order: -1;
-    border-radius: none;
+    max-width: 50%;
+    object-fit: cover;
+  }
+}
+
+/* tablets */
+@media (max-width: 59em) {
+  .container {
+    flex-direction: column-reverse;
+    margin-bottom: 44rem;
   }
 
-  .live,
-  .github {
-    font-size: 16px;
+  .img {
+    max-width: 100%;
+  }
+}
+
+/* phones */
+@media (max-width: 34em) {
+  .img {
+    /* left: 50%; */
+    margin-left: -50vw;
+    margin-right: -50vw;
+    max-width: 100vw;
+    /* right: 50%; */
+    width: 100vw;
+    border-radius: 0;
+  }
+
+  .text {
+    max-width: 100%;
   }
 }

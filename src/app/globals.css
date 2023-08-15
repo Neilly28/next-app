@@ -4,6 +4,10 @@
   margin: 0;
 }
 
+html {
+  font-size: 62.5%;
+}
+
 html,
 body {
   max-width: 100vw;
@@ -32,13 +36,27 @@ a {
 }
 
 .container {
-  max-width: 1200px;
-  min-height: 100vh;
+  max-width: 120rem;
   margin: 0 auto;
-  padding: 0 60px;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
+  padding: 0 5.6rem;
+}
+
+/* landscape tablets */
+@media (max-width: 75em) {
+  html {
+    font-size: 56.25%;
+  }
+}
+
+/* tablets */
+@media (max-width: 75em) {
+  html {
+    font-size: 50%;
+  }
+}
+
+/* smaller tablets */
+@media (max-width: 44em) {
 }
 
 @media screen and (max-width: 480px) {
