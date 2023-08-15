@@ -53,13 +53,3 @@ a {
     font-size: 50%;
   }
 }
-
-/* smaller tablets */
-@media (max-width: 44em) {
-}
-
-@media screen and (max-width: 480px) {
-  .container {
-    /* padding: 12px 24px; */
-  }
-}
