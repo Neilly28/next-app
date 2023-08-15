@@ -9,7 +9,7 @@ import arrow from "../../../public/arrow.json";
 
 const Portfolio = () => {
   return (
-    <section id="portfolio" className={styles.section}>
+    <section className={styles.section}>
       <div className={styles.wrapper}>
         <h2 className={styles.subtitle}>My recent work</h2>
         <Lottie
@@ -20,7 +20,7 @@ const Portfolio = () => {
       </div>
 
       {projects.map((project, index) => (
-        <div className={styles.container} key={index}>
+        <div id="portfolio" className={styles.container} key={index}>
           <div className={styles.text}>
             <h2 className={styles.title}>{project.title}</h2>
             <div className={styles.list}>
