@@ -21,7 +21,7 @@ import { BsGithub, BsLinkedin } from "react-icons/bs";
 
 const About = () => {
   return (
-    <section id="about">
+    <section id="about" className={styles.section}>
       <div className={styles.container}>
         <Image
           className={styles.img}
@@ -70,13 +70,7 @@ const About = () => {
               <Link className={styles.links} href="tel:+491623314389">
                 <span>+491623314389</span>
               </Link>
-              <Link
-                className={styles.links}
-                href="https://calendly.com/neilpilarca-fullstack-developer/meetme"
-                target="_blank"
-              >
-                <span>Calendly</span>
-              </Link>
+
               <Link
                 className={styles.links}
                 href="https://github.com/Neilly28"
@@ -90,6 +84,13 @@ const About = () => {
                 target="_blank"
               >
                 <span>LinkedIn</span>
+              </Link>
+              <Link
+                className={styles.links}
+                href="https://calendly.com/neilpilarca-fullstack-developer/meetme"
+                target="_blank"
+              >
+                <span>Calendly</span>
               </Link>
               <Link
                 className={styles.links}
