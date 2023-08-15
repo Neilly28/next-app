@@ -2,9 +2,8 @@
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 40px;
+  gap: 4.2rem;
   height: 100vh;
-  /* width: 100%; */
 }
 
 .img {
@@ -14,36 +13,29 @@
 .wrapper {
   display: flex;
   flex-direction: column;
-  gap: 44px;
+  gap: 4.4rem;
 }
 
 .text {
-  font-size: 20px;
+  font-size: 2.4rem;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-
-  /* word-spacing: 12px; */
-
-  /* font-weight: 700; */
+  gap: 2.4rem;
 }
 
 .stack {
-  font-size: 28px;
+  font-size: 2.4rem;
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  gap: 12px;
+  gap: 1.2rem;
   flex-wrap: wrap;
 }
 
 .links {
   display: flex;
   align-items: center;
-  /* justify-content: center; */
-  gap: 10px;
-  font-size: 20px;
-  /* font-weight: 600; */
+  gap: 1.2rem;
+  font-size: 2.4rem;
   transition: color 0.25s ease-in-out;
 }
 
@@ -51,22 +43,26 @@
   color: blue;
 }
 
-@media screen and (max-width: 480px) {
+/* smaller desktops */
+@media (max-width: 84em) {
+}
+
+/* tablets */
+@media (max-width: 59em) {
   .container {
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: auto;
+    margin-bottom: 44rem;
+    gap: 0;
   }
 
-  .img {
-    width: 50%;
-    height: 50%;
+  .wrapper {
+    max-width: 75%;
   }
+}
 
-  .text,
-  .links {
-    font-size: 16px;
-    gap: 10px;
+/* phones */
+@media (max-width: 34em) {
+  .wrapper {
+    max-width: 100%;
   }
 }

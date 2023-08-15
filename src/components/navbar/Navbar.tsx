@@ -9,12 +9,12 @@ import { Link as ScrollLink, animateScroll as scroll } from "react-scroll";
 
 const Navbar = () => {
   return (
-    <div className={styles.container}>
+    <header className={styles.container}>
       <Link className={styles.logo} href="/">
         neily.dev
       </Link>
 
-      <div className={styles.links}>
+      <nav className={styles.links}>
         <DarkModeToggle />
         <ScrollLink
           to="portfolio"
@@ -46,8 +46,8 @@ const Navbar = () => {
         >
           <BsLinkedin />
         </Link>
-      </div>
-    </div>
+      </nav>
+    </header>
   );
 };
 

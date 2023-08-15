@@ -1,58 +1,65 @@
 .container {
-  height: 100px;
+  height: 9.6rem;
+  padding: 4.8rem 0 9.6rem 0;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  margin: 0 auto;
-  width: 100%;
 }
 
 .logo {
   font-weight: bold;
-  font-size: 20px;
+  font-size: 2.4rem;
 }
 
 .links {
-  /* width: 100%; */
   display: flex;
   align-items: center;
-  /* gap: 40px; */
-  gap: 40px;
+  gap: 4.2rem;
+}
+
+.link,
+.link:link,
+.link:visited {
   cursor: pointer;
-}
-
-.link {
-  font-size: 20px;
+  font-size: 2.4rem;
   font-weight: bold;
-  transition: color 0.25s ease-in-out; /* Add transition for color property */
+  transition: all 0.25s ease-in-out;
 }
 
-.link:hover {
+.link:hover,
+.link:active {
   color: #3749ea;
 }
 
-.logout {
-  padding: 5px;
-  border: none;
-  /* background-color: aquamarine; */
-  /* color: white; */
-  cursor: pointer;
-}
-
-@media screen and (max-width: 480px) {
-  .logo {
-    display: none;
-  }
-
-  .links {
-    margin: 0 auto;
-    width: 100%;
+/* landscape tablets */
+@media (max-width: 75em) {
+  .container {
     justify-content: space-between;
-    gap: 10px;
-    /* position: sticky; */
+    gap: 1.2rem;
   }
 
   .link {
-    font-size: 20px;
+    font-size: 2.4rem;
+  }
+}
+
+/* tablets */
+@media (max-width: 59em) {
+  .links {
+    margin: 0 auto;
+    max-width: 100%;
+  }
+
+  .logo {
+    display: none;
+  }
+}
+
+/* phones */
+@media (max-width: 34em) {
+  .link {
+    font-size: 1.8rem;
+    /* max-width: 50%;
+    margin: 0 auto; */
   }
 }
