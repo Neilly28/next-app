@@ -47,6 +47,13 @@
 @media (max-width: 84em) {
 }
 
+/* landscape tablets */
+@media (max-width: 75em) {
+  .container {
+    height: auto;
+  }
+}
+
 /* tablets */
 @media (max-width: 59em) {
   .container {

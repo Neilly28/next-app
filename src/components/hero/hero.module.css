@@ -7,7 +7,7 @@
 }
 
 .img {
-  max-width: 40%;
+  max-width: 25%;
 }
 
 .text {
@@ -70,7 +70,7 @@
 
 /* smaller desktops */
 
-@media screen and (max-width: 84em) {
+@media (max-width: 84em) {
   .container {
     max-width: 120rem;
     grid-template-columns: 1fr 1fr;
@@ -86,11 +86,19 @@
   }
 }
 
+/* landscape tablets */
+@media (max-width: 75em) {
+  .container {
+    /* height: auto; */
+  }
+}
+
 /* tablets */
 @media (max-width: 59em) {
   .container {
     display: flex;
     flex-direction: column-reverse;
+    height: auto;
   }
 
   .img {
