@@ -16,11 +16,13 @@ const Navbar = () => {
       <Link href="/" className="title">
         neily.dev
       </Link>
+
       <div className="menu" onClick={() => setMenuOpen(!menuOpen)}>
         <span></span>
         <span></span>
         <span></span>
       </div>
+
       <ul className={menuOpen ? "open" : ""}>
         <li>
           <ScrollLink to="portfolio" smooth={true} duration={1000}>
@@ -32,19 +34,16 @@ const Navbar = () => {
             contact
           </ScrollLink>
         </li>
-        <li>
-          <Link href="https://github.com/Neilly28" target="_blank">
-            <BsGithub />
-          </Link>
-        </li>
-        <li>
-          <Link
-            href="https://www.linkedin.com/in/neil-pilarca/"
-            target="_blank"
-          >
-            <BsLinkedin />
-          </Link>
-        </li>
+
+        <Link href="https://github.com/Neilly28" target="_blank">
+          <BsGithub className="link" />
+        </Link>
+
+        <Link href="https://www.linkedin.com/in/neil-pilarca/" target="_blank">
+          <BsLinkedin className="link" />
+        </Link>
+
+        <DarkModeToggle />
       </ul>
     </nav>
   );
